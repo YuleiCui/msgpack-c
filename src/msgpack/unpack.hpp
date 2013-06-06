@@ -167,10 +167,13 @@ static void unpack(unpacked* result,
 
 // obsolete
 typedef enum {
-	UNPACK_SUCCESS				=  2,
-	UNPACK_EXTRA_BYTES			=  1,
-	UNPACK_CONTINUE				=  0,
+	
 	UNPACK_PARSE_ERROR			= -1,
+	UNPACK_CONTINUE				=  0,
+	UNPACK_EXTRA_BYTES			=  1,
+	UNPACK_SUCCESS				=  2,
+
+
 } unpack_return;
 
 // obsolete
